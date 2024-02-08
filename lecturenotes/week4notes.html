@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Week 4 Notes</title>
+        <meta charset="utf-8">
+        <style>
+            th,td {border:lpx solid black;}
+        </style>
+    </head>
+    <body>
+        <h1>Tables and Forms Day</h1>
+            <h2>Tables</h2>
+                 <table>
+                    <caption>World Populations</caption>
+                    <tr> <!--tr stands for table road-->
+                        <th>Country</th> <!-- th = table heading-->
+                        <th>Population</th>
+                        <th>% of Population</th>
+                    </tr>
+                    <tr>
+                        <td>China</td> <!-- td is table data-->
+                        <td>1,402,830,640</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>1,365,529,124</td>
+                        <td>17.5%</td>
+                    </tr>
+                    <tr>
+                        <td>United States</td>
+                        <td>330,070,331</td>
+                        <td>4.23</td>
+                    </tr>
+                 </table>
+            <h2>Forms</h2>
+                 <form action="" method= "post">
+                    <!-- for value must match id value to link label and input element-->
+                    <!-- post ends from data on the back end-->
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="instructions">Special Instruction:</label><br>
+                    <textarea id="instructions" name="instructions" rows="3" cols="60"></textarea><br>
+                    <p>Choose a delivery method:</p>
+                    <!-- the value in name hooks radio buttons together-->
+                    <input type="radio" id="pickup" name="pickledelivery"
+                    value="pickeup">
+                    <label for="pickeup">pickup</label>
+                    <input type="radio" id="delivery" name="pickupdelivery" value="delivery">
+                    <label for="delivery">delivery</label>
+                    <p>Do you want extra sauce></p>
+                    <input type="checkbox" id="extra" name="extra" value="yes">
+                    <label for="extra">yes</label><br>
+                    <label>Neighborhood</label>
+                    <select id="neighborhood" name="neighborhood"
+                        <option value="Westcott">Westcott</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Eastwood">Eastwood</option>
+                    </select><br>
+                    <input type="submit" vlaue="Send Form">
+                    <!-- most form elements are inline no forwarding to the next line, no margin around-->
+                 </form>
+
+    </body>
+</html>
