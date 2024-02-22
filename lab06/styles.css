@@ -1,2 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 h1, h2 {color: deeppink;}
+.evenrow{background-color: chocolate;}
+h1{font-size: 1em;}
+h2{font-size: .5em;}
