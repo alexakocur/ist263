@@ -1,0 +1,22 @@
+body{background-color: #CBFFA8; color: #73bdb4;
+font-family: 'Times New Roman', Times, serif}
+
+nav a{background-color: #000000;}
+nav a{color: #ffdee1;}
+a:visited {color: #00ff00;}
+a:hover {background-color: #efefef;}
+
+h1{color:black}
+
+nav{background-color: #efefef; padding: 10px;margin-bottom: 30px;}
+.motto {float: right;
+        margin-top: 0px;}
+.row1, .row2 {display: flex;
+        margin: bottom 20px;
+        padding:10px;
+        border-radius:10px;
+        background-color: #ffc0cb;}
+.row1 div, .row2 div{
+        flex:1;
+        margin-right: 20px;
+}
