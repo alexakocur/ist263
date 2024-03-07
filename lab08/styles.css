@@ -12,7 +12,7 @@ nav{background-color: #efefef; padding: 10px;margin-bottom: 30px;}
 .motto {float: right;
         margin-top: 0px;}
 .row1, .row2 {display: flex;
-        margin: bottom 20px;
+        margin: 20px;
         padding:10px;
         border-radius:10px;
         background-color: #ffc0cb;}
