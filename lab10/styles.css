@@ -13,6 +13,14 @@ nav {background-color: #73bdb4;
 .motto {float: right;
         margin-top: 0px;}
 
+.main-image {
+        max-width: 100%;
+}
+
+.map {
+        max-width: 100%;
+}
+
 .row1, .row2 {display: flex;
         margin: 20px;
         padding:10px;
