@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            font-size: 24px;
+        }
+
+        @media (min-width: 801px) {
+            #message-large {
+                display: block;
+            }
+            #message-small {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #message-large {
+                display: none;
+            }
+            #message-small {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="message-large">
+        I'm large
+    </div>
+    <div id="message-small">
+        I'm small
+    </div>
+</body>
+</html>
