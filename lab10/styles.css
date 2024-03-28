@@ -44,3 +44,16 @@ nav {background-color: #73bdb4;
         display:flex;
         margin: 50px;
 }
+@media only screen and (max-width:800px) {
+        nav a{
+                width:100%;
+                display:block;
+        }
+        nav span{
+                display: none;
+        }
+
+        nav a {
+                margin: 10px;
+        }
+}
