@@ -83,6 +83,26 @@
              margin: 10px;
         }
 }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px; 
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .product h3 {
+            margin-top: 0;
+        }
+        .product a {
+            color: blue;
+            text-decoration: none;
+        }
+        .product a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -104,93 +124,54 @@
         <img src="makeupimage2.jpeg" alt="Image 2">
         <img src="makeupimage3.jpeg" alt="Image 3">
     </div>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Products</title>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width */
-            gap: 20px; /* Adjust the gap between grid items */
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .product h3 {
-            margin-top: 0;
-        }
-        .product a {
-            color: blue;
-            text-decoration: none;
-        }
-        .product a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
 <body>
     <div class="grid-container">
-        <!-- Primers -->
         <div class="product">
             <h3>Primers</h3>
             <p><strong>E.L.F. Power Grip Primer</strong><br>
             Purchase here: <a href="https://www.elfcosmetics.com/power-grip-primer/82846.html">$10</a><br>
             Makeup finish: Dewy/Glowy</p>
         </div>
-        <!-- Add more products in the same way -->
-        <!-- Skin Tint -->
         <div class="product">
             <h3>Skin Tint</h3>
             <p><strong>E.L.F. Halo Glow Liquid Filter</strong><br>
             Purchase here: <a href="https://www.elfcosmetics.com/halo-glow-liquid-filter/83567.html">$14</a><br>
             Makeup finish: Dewy/Glowy</p>
         </div>
-        <!-- Contour/Bronzer -->
         <div class="product">
             <h3>Contour/Bronzer</h3>
             <p><strong>E.L.F. Halo Glow Liquid Contour Wand</strong><br>
             Purchase here: <a href="https://www.elfcosmetics.com/halo-glow-contour-beauty-wand/84706.html">$9</a><br>
             Makeup finish: Dewy/Glowy</p>
         </div>
-        <!-- Blush -->
         <div class="product">
             <h3>Blush</h3>
             <p><strong>Rare Beauty Soft Pinch Liquid Blush</strong><br>
             Purchase here: <a href="https://www.rarebeauty.com/products/soft-pinch-liquid-blush?variant=34493780951175">$23</a><br>
             Makeup finish: Dewy/Glowy</p>
         </div>
-        <!-- Highlight -->
         <div class="product">
             <h3>Highlight</h3>
             <p><strong>Rare Beauty Positive Light Liquid Luminizer</strong><br>
             Purchase here: <a href="https://www.rarebeauty.com/products/positive-light-liquid-luminizer-1?variant=40242053152903">$25</a><br>
             Makeup finish: Dewy/Glowy</p>
         </div>
-        <!-- Mascara/Eyelash Curler -->
         <div class="product">
             <h3>Mascara/Eyelash Curler</h3>
             <p><strong>Ilia Limitless Lash Mascara</strong><br>
             Purchase here: <a href="https://iliabeauty.com/products/after-midnight?variant=7439279063068">$28</a></p>
         </div>
-        <!-- Lipsticks -->
         <div class="product">
             <h3>Lipsticks</h3>
             <p><strong>Charlotte Tilbury Pillow Talk Matte Lipstick</strong><br>
             Purchase here: <a href="https://www.charlottetilbury.com/us/product/matte-revolution-lipstick-pillowtalk?istCompanyId=df2906b5-23af-4f14-b5ed-2585966c6cfa&istFeedId=7939e1ee-2e27-4b0f-88f4-212583445937&istItemId=xllaprpwx&istBid=t&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E_Ab5erqIsJuuSXN_x8OLPFIJltNcBk-l9WvEbPl4l7f9NY4pDdLYRoC9v0QAvD_BwE&gclsrc=aw.ds">$35</a><br>
             Makeup finish: Matte</p>
         </div>
-        <!-- Eyeshadow/Eyeliner -->
         <div class="product">
             <h3>Eyeshadow/Eyeliner</h3>
             <p><strong>NYX Epic Ink Waterproof Liquid Eyeliner</strong><br>
             Purchase here: <a href="https://www.nyxcosmetics.com/eye/eyeliner/epic-ink-waterproof-liquid-eyeliner/800897085605.html?GeoRedirectOff=True&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-Ewqvn3LPqHgTY91ertjssqRGEhYmtMbOsP75WfOpHYTqcTl4JGfUaxoCfukQAvD_BwE&gclsrc=aw.ds">$9.99</a></p>
         </div>
-        <!-- Add more categories and products as needed -->
     </div>
 </body>
 </html>
