@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11y</title>
+    <style>
+        .skip{
+            background-color: #ffc0cb;
+            padding: 8px;
+            border: 2px solid #000000;
+            text-decoration: none;
+            position: absolute; /* positions to relative top and bottom of browser */
+            top: 10px;
+            left: -999px; /* push the button off screen */
+        }
+        .skip:focus{
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#skip" class="skip">Skip to Content</a><br>
+        <!-- tabindex is for complex website to change tab order -->
+        <a href="http://www.amazon.com" tabindex="4">Amazon</a> <br>
+        <a href="http://www.google.com" tabindex="3">Google</a><br>
+        <a href="http://www.ebay.com" tabindex="2">Ebay</a>
+    </nav>
+    <h1>All the A11y Techniques</h1>
+    <p id="skip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, ducimus minima! A, laudantium! Nulla quaerat est cumque neque earum, ipsum hic, dolores veniam asperiores tempora laborum autem illum, eum laboriosam?</p>
+</body>
+</html>
