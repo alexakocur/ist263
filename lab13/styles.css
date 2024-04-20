@@ -3,47 +3,37 @@ body {
     color: #0B5151; /* Adjusted for better contrast */
     margin: 10px;
 }
-
 .mainheading {
     text-align: center;
     margin-bottom: 20px;
 }
-
 a:visited {
     color: #00ff00;
 }
-
 a:hover {
     background-color: #efefef;
 }
-
 nav a {
     color: #ffffff;
 }
-
 nav a:hover {
     background-color: #CBFFA8;
 }
-
 nav {
     background-color: #73bdb4;
     padding: 10px;
     margin-bottom: 30px;
 }
-
 .motto {
     float: right;
     margin-top: 0px;
 }
-
 .main-image {
     max-width: 100%;
 }
-
 .map {
     max-width: 100%;
 }
-
 .row1,
 .row2 {
     display: flex;
