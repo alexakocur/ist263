@@ -1,6 +1,6 @@
 body {
-    background-color: #CBFFA8; /* Passed */
-    color: #0B5151; /* Adjusted for better contrast */
+    background-color: #CBFFA8; 
+    color: #0B5151; 
     margin: 10px;
 }
 .mainheading {
@@ -8,7 +8,7 @@ body {
     margin-bottom: 20px;
 }
 a:visited {
-    color: #00ff00;
+    color: #000000;
 }
 a:hover {
     background-color: #efefef;
@@ -17,10 +17,10 @@ nav a {
     color: #ffffff;
 }
 nav a:hover {
-    background-color: #CBFFA8;
+    background-color: #ddf9ca;
 }
 nav {
-    background-color: #73bdb4;
+    background-color: #84fff1;
     padding: 10px;
     margin-bottom: 30px;
 }
