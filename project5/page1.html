@@ -18,7 +18,9 @@
         }
         .header h1 {
             font-size: 40px;
-            margin: 0;
+            margin: auto;
+            font-weight: bold; 
+            text-align: center;
         }
         .navigation {
             background-color: #FF69B4;
@@ -38,77 +40,85 @@
             color: #F8C8DC;
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
-            margin: 50px auto 0;
+            margin: 50px auto;
             max-width: 800px;
+            font-weight: normal; 
         }
-        h1 {
+        h1, h2 {
             font-size: 20px; 
             color: #333; 
             font-family: 'Times New Roman', Times, serif;
-            text-align: center;
+            text-align: left;
             margin: 20px auto 30px;
+            max-width: 800px;
+            font-weight: normal; 
         }
         h2 {
-            font-size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
             border: 4px solid #FF69B4;
             padding: 10px;
             width: fit-content;
             margin: 0 auto;
+            text-align: left;
         }
         .image-container{
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            padding: 0 20px;
         }
         .image-container img {
-            width: 300px;
+            max-width: calc(33.33% - 40px);
             height: auto;
-            margin: 0 30px;
+            margin: 0 20px;
         }
         @media only screen and (max-width: 600px) {
-    .header {
-        padding: 40px 0; 
-        font-size: 60px;
-    }
-    .header h1 {
-        font-size: 30px;
-    }
-    .navigation {
-        padding: 10px 0;
-    }
-    .navigation a {
-        margin: 0 10px; 
-    }
-    p {
-        font-size: 20px;
-        margin: 30px auto 0;
-    }
-    h1 {
-        font-size: 16px; 
-        margin: 10px auto 20px;
-    }
-    h2 {
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-width: 2px;
-        padding: 5px;
-    }
-    .image-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px;
-    }
-}
+            .header {
+                padding: 40px 0; 
+                font-size: 60px;
+            }
+            .header h1 {
+                font-size: 30px;
+            }
+            .navigation {
+                padding: 10px 0;
+            }
+            .navigation a {
+                margin: 0 10px; 
+            }
+            p {
+                font-size: 20px;
+                margin: 30px auto 0;
+            }
+            h1, h2 {
+                font-size: 16px; 
+                margin: 10px auto 20px;
+            }
+            h2 {
+                border-width: 2px;
+                padding: 50px;
+                width: 100%; 
+                box-sizing: border-box; 
+            }
+            .image-container {
+                padding: 0 10px;
+            }
+            .image-container img {
+                max-width: calc(50% - 20px);
+                margin: 10px;
+            }
+        }
+        @media only screen and (min-width: 601px) {
+            .header h1 {
+                font-size: 40px;
+            }
+            .header {
+                padding: 70px 0;
+            }
+            h2 {
+                width: 100%;
+                box-sizing: border-box; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -122,8 +132,8 @@
         <a href="stepbystep.html">Step-by-Step</a>
     </div>
     <p>THE COMPLETE BEAUTY GUIDE BY ALEXA KOCUR: <br> Everything you need to know about makeup and how to get started</p>
-    <h1>Makeup is something that people often question but no one ever knows where to start. My name is Alexa Kocur and this website is here to help anyone that is looking for the perfect makeup routine. I started getting into makeup just two years ago, I knew I wanted to start doing my makeup but I was so confused on where to start. If you walk into your local beauty store such as Sephora or Ulta as a beginner makeup user, you are bound to be confused. There is so much makeup on the market that the average person doesn't know about. This website is here to guide you through the process of getting into using makeup. How to start what to do and not to do and I will be including my favorite products as well as products to stay away from.</h1>
-    <h2>Below are some bullet points that I have complied to help my makeup journey be a little less stressful: <br> A positive attitude: <br> Makeup is hard, it is far from easy – you need patience and a positive attitude. When I started this new hobby and started buying these products, it took a lot of trial and error to figure out what worked for me. Be open to new products and dont be scared to ask for help from friends. <br> Figure out what your style is: <br> Makeup is art, it is the way you express yourself. Figure out what type of makeup you like. There are tons of different styles of makeup out there. Look online at reference photos and try to visualize that makeup look on yourself. Ask yourself these questions: Do you like natural makeup, what type of finish do you want on your face? Glowy finish or more of a matte finish?<br>Price Range: <br> You want to keep in mind that makeup is expensive. Ask yourself if you are willing to buy more high end makeup or drugstore makeup. If you are just starting, I recommend using drugstore makeup because honestly it is just as good. I will be sharing later on my website what drugstore makeup products are good.</h2>
+    <h1>Makeup is something that people often question but no one ever knows where to start. My name is Alexa Kocur and this website is here to help anyone that is looking for the perfect makeup routine. <br> <br> I started getting into makeup just two years ago, I knew I wanted to start doing my makeup but I was so confused on where to start. If you walk into your local beauty store such as Sephora or Ulta as a beginner makeup user, you are bound to be confused. There is so much makeup on the market that the average person doesn't know about. This website is here to guide you through the process of getting into using makeup. How to start what to do and not to do and I will be including my favorite products as well as products to stay away from.</h1><br>
+    <h2>Here are some bullet points that I have complied to help your makeup journey be less stressful: <br><br> <strong>A positive attitude:</strong> <br> Makeup is hard, it is far from easy – you need patience and a positive attitude. When I started this new hobby and started buying these products, it took a lot of trial and error to figure out what worked for me. Be open to new products and dont be scared to ask for help from friends. <br><br> <strong>Figure out what your style is:</strong> <br> Makeup is art, it is the way you express yourself. Figure out what type of makeup you like. There are tons of different styles of makeup out there. Look online at reference photos and try to visualize that makeup look on yourself. Ask yourself these questions: Do you like natural makeup, what type of finish do you want on your face? Glowy finish or more of a matte finish?<br><br><strong>Price Range:</strong><br> You want to keep in mind that makeup is expensive. Ask yourself if you are willing to buy more high end makeup or drugstore makeup. If you are just starting, I recommend using drugstore makeup because honestly it is just as good.</h2>
     <div class="image-container">
         <img src="makeupimage1.jpeg" alt="Image 1">
         <img src="makeupimage2.jpeg" alt="Image 2">

@@ -18,35 +18,20 @@
         }
         .header h1 {
             font-size: 40px;
-            margin: 0;
+            margin: auto;
+            font-weight: bold; 
         }
-        .navigation {
+        .navigation, .secondary-navigation {
             background-color: #FF69B4;
             text-align: center;
             padding: 15px 0;
         }
-        .navigation a {
+        .navigation a, .secondary-navigation a {
             color: #fff; 
             text-decoration: none;
             margin: 0 20px; 
         }
-        .navigation a:hover {
-            color: #f8f8f8; 
-        }
-        .secondary-navigation {
-            background-color: #FF69B4;
-            text-align: center;
-            padding: 15px 0;
-        }
-        .secondary-navigation a {
-            color: #fff; 
-            text-decoration: none;
-            margin: 0 20px; 
-        }
-        .secondary-navigation a:hover {
-            color: #f8f8f8; 
-        }
-        .secondary-navigation a:hover {
+        .navigation a:hover, .secondary-navigation a:hover {
             color: #f8f8f8; 
         }
         p {
@@ -57,23 +42,13 @@
             margin: 50px auto 0;
             max-width: 800px;
         }
-        h1 {
+        h1, h2, h3 {
             font-size: 20px; 
             color: #333; 
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
             margin: 20px auto 30px;
-        }
-        h2 {
-            font-size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border: 4px solid #FF69B4;
-            padding: 10px;
-            width: fit-content;
-            margin: 0 auto;
+            font-weight: normal; /* Remove bold font weight */
         }
         .image-container{
             display: flex;
@@ -86,19 +61,17 @@
             margin: 0 30px;
         }
         @media only screen and (max-width: 800px) {
-        nav a {
-            width:100%;
-            display: block;
+            nav a {
+                width:100%;
+                display: block;
+            }
+            nav span {
+                display: none;
+            }
+            nav a {
+                margin: 10px;
+            }
         }
-        
-        nav span{
-             display: none;
-        }
-
-        nav a {
-             margin: 10px;
-        }
-}
     </style>
 </head>
 <body>
@@ -111,12 +84,13 @@
         <a href="makeup101.html">Makeup 101</a>
         <a href="stepbystep.html">Step-by-Step</a>
     </div>
-    <h1>Confused about the makeup products you need to get started? Don't worry! I have created the ultimate makeup 101 list, all of the products that I recommend you use and in the order that you use them. This list of products will ensure that you get the most flawless makeup.</h1>
-    <nav class="secondary-navigation"></nav>
+
+    <div class="secondary-navigation">
         <a href="overallface.html">Overall Face Makeup Recommendations</a>
         <a href="eyes.html">Eye Makeup Recommendations</a>
         <a href="lips.html">Lip Recommendations</a>
         <a href="other.html">Other Makeup Recommendations</a>
+    </div>
 
     <p>A COMPLETE IN ORDER LIST OF ALL THE MAKEUP PRODUCTS FOR BEGINNERS:</p>
     <h2>Lets first get started with the order you use makeup in: <br> 1. PRIMER <br> 2. FOUNDATION OR SKIN TINT <br> 3. CONCEALER <br> 4. COUNTOUR/BRONZER <br> 5. BLUSH <br> 6. HIGHLIGHTER <br> 7. MASCARA + EYELASH CURLER <br> 8. LIPSTICK <br> OPTIONAL PRODUCTS: <br> 9. EYELINER <br> 10. EYESHADOW</h2>
