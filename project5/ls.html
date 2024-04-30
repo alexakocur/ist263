@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa's Beauty Guide</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .header {
+            background-color: #F8C8DC;
+            text-align: center;
+            padding: 70px 0; 
+            font-size: 100px;
+        }
+        .header h1 {
+            font-size: 40px;
+            margin: auto;
+            font-weight: bold; 
+        }
+        .navigation, .secondary-navigation {
+            background-color: #FF69B4;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .navigation a, .secondary-navigation select {
+            color: #fff; 
+            text-decoration: none;
+            margin: 0 20px; 
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .navigation a:hover, .secondary-navigation select:hover {
+            color: #f8f8f8; 
+        }
+        .secondary-navigation {
+            display: none;
+        }
+        .secondary-navigation select {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        p {
+            font-size: 30px;
+            color: #F8C8DC;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 50px auto 0;
+            max-width: 800px;
+        }
+        h1, h2, h3 {
+            font-size: 20px; 
+            color: #333; 
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 20px auto 30px;
+            font-weight: normal; /* Remove bold font weight */
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+            margin: 0 30px;
+        }
+        @media only screen and (max-width: 800px) {
+            nav a {
+                width:100%;
+                display: block;
+            }
+            nav span {
+                display: none;
+            }
+            nav a {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ALEXA'S BEAUTY GUIDE</h1>
+    </div>
+
+    <div class="navigation">
+        <a href="page1.html">Home Page</a>
+        <a href="makeup101.html">Makeup 101</a>
+        <a href="stepbystep.html">Step-by-Step</a>
+    </div>
+
+    <div class="secondary-navigation">
+        <select onchange="window.location.href=this.value">
+            <option value="#">Select Makeup Category</option>
+            <option value="overallface.html">Overall Face Makeup Recommendations</option>
+            <option value="eyes.html">Eye Makeup Recommendations</option>
+            <option value="lips.html">Lip Recommendations</option>
+            <option value="other.html">Other Makeup Recommendations</option>
+        </select>
+    </div>
+
+    <p>A COMPLETE IN ORDER LIST OF ALL THE MAKEUP PRODUCTS FOR BEGINNERS:</p>
+    <h2>Lets first get started with the order you use makeup in: <br> 1. PRIMER <br> 2. FOUNDATION OR SKIN TINT <br> 3. CONCEALER <br> 4. COUNTOUR/BRONZER <br> 5. BLUSH <br> 6. HIGHLIGHTER <br> 7. MASCARA + EYELASH CURLER <br> 8. LIPSTICK <br> OPTIONAL PRODUCTS: <br> 9. EYELINER <br> 10. EYESHADOW</h2>
+    <h3>Now that I have listed the order that the makeup goes in, the navigation bar is there for you to press to see how to use the products as well as recommendations!</h3> 
+    <div class="image-container">
+        <img src="foundationpic.png" alt="Image 1"> 
+        <img src="makeupbrushespic.jpeg" alt="Image 2">
+        <img src="makeupvanity.jpeg" alt="Image 3">
+    </div>
+</body>
+</html>
