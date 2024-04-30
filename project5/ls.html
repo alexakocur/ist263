@@ -41,8 +41,8 @@
             display: none;
         }
         .secondary-navigation select {
-            display: inline-block;
-            padding: 10px 20px;
+            padding: 10px;
+            font-size: 16px;
         }
         p {
             font-size: 30px;
@@ -96,7 +96,7 @@
     </div>
 
     <div class="secondary-navigation">
-        <select onchange="window.location.href=this.value">
+        <select onchange="location = this.value;">
             <option value="#">Select Makeup Category</option>
             <option value="overallface.html">Overall Face Makeup Recommendations</option>
             <option value="eyes.html">Eye Makeup Recommendations</option>
@@ -115,3 +115,4 @@
     </div>
 </body>
 </html>
+
