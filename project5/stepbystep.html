@@ -18,7 +18,9 @@
         }
         .header h1 {
             font-size: 40px;
-            margin: 0;
+            margin: auto;
+            font-weight: bold; 
+            text-align: center;
         }
         .navigation {
             background-color: #FF69B4;
@@ -38,70 +40,84 @@
             color: #F8C8DC;
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
-            margin: 50px auto 0;
+            margin: 50px auto;
             max-width: 800px;
+            font-weight: normal; 
         }
-        h1 {
+        h1, h2 {
             font-size: 20px; 
             color: #333; 
             font-family: 'Times New Roman', Times, serif;
-            text-align: center;
+            text-align: left;
             margin: 20px auto 30px;
+            max-width: 800px;
+            font-weight: normal; 
         }
         h2 {
-            font-size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
             border: 4px solid #FF69B4;
             padding: 10px;
             width: fit-content;
             margin: 0 auto;
+            text-align: left;
         }
         .image-container{
             display: flex;
             justify-content: center;
             margin-top: 50px;
+            padding: 0 20px;
         }
         .image-container img {
-            width: 300px;
+            max-width: calc(33.33% - 40px);
             height: auto;
-            margin: 0 30px;
+            margin: 0 20px;
         }
-        @media only screen and (max-width: 800px) {
-        nav a {
-            width:100%;
-            display: block;
+        @media only screen and (max-width: 600px) {
+            .header {
+                padding: 40px 0; 
+                font-size: 60px;
+            }
+            .header h1 {
+                font-size: 30px;
+            }
+            .navigation {
+                padding: 10px 0;
+            }
+            .navigation a {
+                margin: 0 10px; 
+            }
+            p {
+                font-size: 20px;
+                margin: 30px auto 0;
+            }
+            h1, h2 {
+                font-size: 16px; 
+                margin: 10px auto 20px;
+            }
+            h2 {
+                border-width: 2px;
+                padding: 50px;
+                width: 100%; 
+                box-sizing: border-box; 
+            }
+            .image-container {
+                padding: 0 10px;
+            }
+            .image-container img {
+                max-width: calc(50% - 20px);
+                margin: 10px;
+            }
         }
-        
-        nav span{
-             display: none;
-        }
-
-        nav a {
-             margin: 10px;
-        }
-}
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-            gap: 20px; 
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .product h3 {
-            margin-top: 0;
-        }
-        .product a {
-            color: blue;
-            text-decoration: none;
-        }
-        .product a:hover {
-            text-decoration: underline;
+        @media only screen and (min-width: 601px) {
+            .header h1 {
+                font-size: 40px;
+            }
+            .header {
+                padding: 70px 0;
+            }
+            h2 {
+                width: 100%;
+                box-sizing: border-box; 
+            }
         }
     </style>
 </head>
@@ -115,62 +131,14 @@
         <a href="makeup101.html">Makeup 101</a>
         <a href="stepbystep.html">Step-by-Step</a>
     </div>
-    <p>THE COMPLETE BEAUTY GUIDE BY ALEXA KOCUR: <br> Everything you need to know about makeup and how to get started</p>
-    <h1>Makeup is something that people often question but no one ever knows where to start. My name is Alexa Kocur and this website is here to help anyone that is looking for the perfect makeup routine. I started getting into makeup just two years ago, I knew I wanted to start doing my makeup but I was so confused on where to start. If you walk into your local beauty store such as Sephora or Ulta as a beginner makeup user, you are bound to be confused. There is so much makeup on the market that the average person doesn't know about. This website is here to guide you through the process of getting into using makeup. How to start what to do and not to do and I will be including my favorite products as well as products to stay away from.</h1>
-    <h2>How to use Primer: <br> Start your makeup application with a clean face. Take your primer and apply a dime sized amount all over the face and let dry for 30 seconds. Apply with clean hands <br>How to use your base of skin tint or foundation:<br> After you apply your primer, take your foundation or skin tint of choice and dot it all over your face. Keep in mind that you want to make sure that this foundation and skin tint covers your whole face. The less you put on your face the less coverage and vice versa. Apply with a beauty blender which you can find here. (TIP: make sure to wet the beauty blender for better application, squeeze out extra liquid) <br> How to apply concealer: <br> Take your concealer and apply it underneath your eyes. One dot on each eye will suffice. You can also apply it to the middle of your eyebrows as well as anywhere else that needs extra coverage. Wait 10 seconds and use a concealer brush which you can click here to buy the brush. <br> How to use contour/bronzer: <br> Take your bronzer, contour or both and apply right above your cheek bone, at the very top of your forehead as well as underneath your chin. Make sure it is well blended. Apply with a beauty blender.<br> How to use blush: <br> You can use blush by applying two small dots on the either side of your cheek preferably right in the middle. Blend it out with your beauty blender. <br>How to use highlight: <br> You can apply highlight at the bridge of your nose as well as the top of your cheekbones right where the corner of your eye starts. Tap in the highlighter with clean hands until fully blended. <br>How to use mascara/eyelash curler: <br> You can first start by using your eyelash curler. Insert your eyelash into the clamp of the curler and hold for 5 seconds on each eye. Make sure you don't press too hard. When applying mascara, go slow, you want to make sure the eyelashes are getting fully covered and elongated and getting the best results. Put 1-2 coats on. <br> How to use lipstick:<br> Lipstick is applied like any other lip balm. You can use more or less depending on how much color you want. 
+    <p>STEP BY STEP GUIDE: <br> Everything you need to know about how to use these products.</p>
+    <h1>After exploring makeup recommendations, you may be wondering how to apply them correctly. Knowing where to apply each product and understanding the right tools for blending are essential for achieving the desired look. <br> <br> This guide offers detailed examples of application techniques and recommends suitable tools for blending. Whether you are considering purchasing the recommended makeup or already have it, this guide serves as a valuable resource for mastering makeup application techniques.</h1><br>
+    <h2>Here is everything you need to know for a step by step application: <br><br> <strong>How to use Primer:</strong> Start your makeup application with a clean face. Take your primer and apply a dime sized amount all over the face and let dry for 30 seconds. Apply with clean hands. <br><br> <strong>How to use your base of skin tint or foundation:</strong> After you apply your primer, take your foundation or skin tint of choice and dot it all over your face. Keep in mind that you want to make sure that this foundation and skin tint covers your whole face. The less you put on your face the less coverage and vice versa. Apply with a beauty blender which you can find here. (TIP: make sure to wet the beauty blender for better application, squeeze out extra liquid) <br><br> <strong>How to apply concealer:</strong> Take your concealer and apply it underneath your eyes. One dot on each eye will suffice. You can also apply it to the middle of your eyebrows as well as anywhere else that needs extra coverage. Wait 10 seconds and use a concealer brush which you can click here to buy the brush. <br><br> <strong>How to use contour/bronzer:</strong> Take your bronzer, contour or both and apply right above your cheek bone, at the very top of your forehead as well as underneath your chin. Make sure it is well blended. Apply with a beauty blender. <br><br><strong>How to use blush:</strong> You can use blush by applying two small dots on the either side of your cheek preferably right in the middle. Blend it out with your beauty blender. <br><br> <strong>How to use highlight:</strong> You can apply highlight at the bridge of your nose as well as the top of your cheekbones right where the corner of your eye starts. Tap in the highlighter with clean hands until fully blended. <br><br> <strong>How to use mascara/eyelash curler:</strong> You can first start by using your eyelash curler. Insert your eyelash into the clamp of the curler and hold for 5 seconds on each eye. Make sure you don't press too hard. When applying mascara, go slow, you want to make sure the eyelashes are getting fully covered and elongated and getting the best results. Put 1-2 coats on. <br><br> <strong>How to use lipstick:</strong> Lipstick is applied like any other lip balm. You can use more or less depending on how much color you want. 
         </h2>
     <div class="image-container">
-        <img src="makeupimage1.jpeg" alt="Image 1">
-        <img src="makeupimage2.jpeg" alt="Image 2">
-        <img src="makeupimage3.jpeg" alt="Image 3">
-    </div>
-    <div class="grid-container">
-        <div class="product">
-            <h3>Primers</h3>
-            <p><strong>E.L.F. Power Grip Primer</strong><br>
-            Purchase here: <a href="https://www.elfcosmetics.com/power-grip-primer/82846.html">$10</a><br>
-            Makeup finish: Dewy/Glowy</p>
-        </div>
-        <div class="product">
-            <h3>Skin Tint</h3>
-            <p><strong>E.L.F. Halo Glow Liquid Filter</strong><br>
-            Purchase here: <a href="https://www.elfcosmetics.com/halo-glow-liquid-filter/83567.html">$14</a><br>
-            Makeup finish: Dewy/Glowy</p>
-        </div>
-        <div class="product">
-            <h3>Contour/Bronzer</h3>
-            <p><strong>E.L.F. Halo Glow Liquid Contour Wand</strong><br>
-            Purchase here: <a href="https://www.elfcosmetics.com/halo-glow-contour-beauty-wand/84706.html">$9</a><br>
-            Makeup finish: Dewy/Glowy</p>
-        </div>
-        <div class="product">
-            <h3>Blush</h3>
-            <p><strong>Rare Beauty Soft Pinch Liquid Blush</strong><br>
-            Purchase here: <a href="https://www.rarebeauty.com/products/soft-pinch-liquid-blush?variant=34493780951175">$23</a><br>
-            Makeup finish: Dewy/Glowy</p>
-        </div>
-        <div class="product">
-            <h3>Highlight</h3>
-            <p><strong>Rare Beauty Positive Light Liquid Luminizer</strong><br>
-            Purchase here: <a href="https://www.rarebeauty.com/products/positive-light-liquid-luminizer-1?variant=40242053152903">$25</a><br>
-            Makeup finish: Dewy/Glowy</p>
-        </div>
-        <div class="product">
-            <h3>Mascara/Eyelash Curler</h3>
-            <p><strong>Ilia Limitless Lash Mascara</strong><br>
-            Purchase here: <a href="https://iliabeauty.com/products/after-midnight?variant=7439279063068">$28</a></p>
-        </div>
-        <div class="product">
-            <h3>Lipsticks</h3>
-            <p><strong>Charlotte Tilbury Pillow Talk Matte Lipstick</strong><br>
-            Purchase here: <a href="https://www.charlottetilbury.com/us/product/matte-revolution-lipstick-pillowtalk?istCompanyId=df2906b5-23af-4f14-b5ed-2585966c6cfa&istFeedId=7939e1ee-2e27-4b0f-88f4-212583445937&istItemId=xllaprpwx&istBid=t&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E_Ab5erqIsJuuSXN_x8OLPFIJltNcBk-l9WvEbPl4l7f9NY4pDdLYRoC9v0QAvD_BwE&gclsrc=aw.ds">$35</a><br>
-            Makeup finish: Matte</p>
-        </div>
-        <div class="product">
-            <h3>Eyeshadow/Eyeliner</h3>
-            <p><strong>NYX Epic Ink Waterproof Liquid Eyeliner</strong><br>
-            Purchase here: <a href="https://www.nyxcosmetics.com/eye/eyeliner/epic-ink-waterproof-liquid-eyeliner/800897085605.html?GeoRedirectOff=True&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-Ewqvn3LPqHgTY91ertjssqRGEhYmtMbOsP75WfOpHYTqcTl4JGfUaxoCfukQAvD_BwE&gclsrc=aw.ds">$9.99</a></p>
-        </div>
+        <img src="goodpicone.png" alt="Image 1">
+        <img src="goodpictwo.jpeg" alt="Image 2">
+        <img src="goodpicthree.jpeg" alt="Image 3">
     </div>
 </body>
 </html>

@@ -3,105 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVERALL FACE RECOMMENDATIONS</title>
-</head>
-<style>
-         body {
+    <title>Overall Face Makeup Recommendations</title>
+    <style>
+        body {
             margin: 0;
             padding: 0;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, sans-serif;
         }
-        .header {
-            background-color: #F8C8DC;
-            text-align: center;
-            padding: 70px 0; 
-            font-size: 100px;
+        .wrapper {
+            padding: 0 20px; /* Add padding at each end */
         }
-        .header h1 {
-            font-size: 40px;
-            margin: 0;
-        }
-        .navigation {
-            background-color: #FF69B4;
-            text-align: center;
-            padding: 15px 0;
-        }
-        .navigation a {
-            color: #fff; 
-            text-decoration: none;
-            margin: 0 20px; 
-        }
-        .navigation a:hover {
-            color: #f8f8f8; 
-        }
-        .secondary-navigation {
-            background-color: #FF69B4;
-            text-align: center;
-            padding: 15px 0;
-        }
-        .secondary-navigation a {
-            color: #fff; 
-            text-decoration: none;
-            margin: 0 20px; 
-        }
-        .secondary-navigation a:hover {
-            color: #f8f8f8; 
-        }
-        .secondary-navigation a:hover {
-            color: #f8f8f8; 
-        }
-        p {
-            font-size: 30px;
-            color: #F8C8DC;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin: 50px auto 0;
+        .container {
             max-width: 800px;
-        }
-        h1 {
-            font-size: 20px; 
-            color: #333; 
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin: 20px auto 30px;
-        }
-        h2 {
-            font-size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border: 4px solid #FF69B4;
-            padding: 10px;
-            width: fit-content;
             margin: 0 auto;
+            padding: 20px;
         }
-        .image-container{
+        h1{
+            font-size: 35px;
+            padding-top: 30px;
+            text-align: center;
+            color: #f987b6;
+        }
+        .image-container {
             display: flex;
-            justify-content: center;
-            margin-top: 50px;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
         }
         .image-container img {
-            width: 300px;
-            height: auto;
-            margin: 0 30px;
+            width: 35%; /* Adjust the width as needed */
+            height: 500px;
         }
-        @media only screen and (max-width: 800px) {
-        nav a {
-            width:100%;
-            display: block;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        
-        nav span{
-             display: none;
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            background-color: #F8C8DC;
         }
-
-        nav a {
-             margin: 10px;
+        th {
+            background-color: #f2f2f2;
         }
-} 
-</style>
+        a {
+            text-decoration: none;
+            color: #065fd4;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .secondary-navigation select {
+            color: #333; 
+            text-decoration: none;
+            margin: 0;
+            width: 50%; 
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            padding: 12px 20px; 
+            border: 2px solid #b83c8e; 
+            background-color: #fff; 
+            box-sizing: border-box; 
+            font-size: 18px; 
+            font-weight: bold; 
+            margin-top: 10px; 
+            margin-bottom: 20px; 
+        }
+        .secondary-navigation select:hover {
+            color: #f9a5cf; 
+            background-color: #f8f8f8;
+            border-color: #ffbbdd; 
+        }
+        .secondary-navigation {
+            text-align: center; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
 <body>
-   <h1>PRIMER!! <br> This is such an important part of your makeup routine. Primer is something that is crucial! Primer is used so that your makeup stays on your face all day. <br> FOUNDATION OR SKIN TINT <br> Foundation or skin tint is what you call the “base” of your face. After you use the primer you put on your base. It is a skin colored liquid that you put all over your face. Foundation is a more high coverage while skin tint has a lighter coverage. Foundation and skin tint is mainly used to even out your skin tone, hide and blemishes and provide coverage. Personally, I use skintint because I don't love how heavy foundation feels on my face. <br> CONCEALER <br> Concealer is the next step. After your base (foundation and or skintint) you put on concealer. Concealer is similar to foundation except it's much thicker. I generally use concealer that is a lighter shade so that it brightens up my face. Concealer also helps alot with adding more coverage over stubborn blemishes and imperfections. <br> COUNTOUR/BRONZER <br> Contour is used to sculpt and add dimension to the face. It essentially carves out your face. Don't worry I know this sounds weird, but it really does work. <br> BLUSH <br> Blush is my all time favorite makeup product. I love how you can use any color blush you want pink, red, purple, it's so versatile. Blush is what adds a color to your face, it gives you the “rosy” cheek effect. <br> HIGHLIGHTER <br> Highlighter is a product that has a lot of benefits. Not only does it add shimmer to your face to make you look super bright, but it could also be used to lift your cheekbone. </h1> 
+    <div class="wrapper"> <!-- Added wrapper div -->
+        <h1>Overall Face Makeup Recommendations</h1>
+        
+        <!-- Navigation moved here -->
+        <div class="secondary-navigation">
+            <select onchange="location = this.value;">
+                <option value="#">Select Makeup Category</option>
+                <option value="overallface.html">Overall Face Makeup Recommendations</option>
+                <option value="eyes.html">Eye Makeup Recommendations</option>
+                <option value="lips.html">Lip Recommendations</option>
+                <option value="other.html">Other Makeup Recommendations</option>
+                <option value="makeup101.html">Back to Menu</option>
+            </select>
+        </div>
+
+        <div class="image-container">
+            <img src="deskmakeup.jpeg" alt="Image 1">
+            <img src="deskmakeup2.jpeg" alt="Image 2">
+            <img src="deskmakeup3.png" alt="Image 3">
+        </div>
+
+        <div class="container">
+            <h2>Primers</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Purchase Link</th>
+                    <th>Price</th>
+                    <th>Makeup Finish</th>
+                </tr>
+                <tr>
+                    <td>E.L.F. Power Grip Primer</td>
+                    <td><a href="https://www.elfcosmetics.com/power-grip-primer/82846.html">$10</a></td>
+                    <td>$10</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>E.L.F. Power Grip Primer with Niacinamide</td>
+                    <td><a href="https://www.elfcosmetics.com/power-grip-primer--4-niacinamide/81517.html">$10</a></td>
+                    <td>$10</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>E.L.F. Liquid Poreless Putty Primer</td>
+                    <td><a href="https://www.elfcosmetics.com/liquid-poreless-putty-primer/81556.html">$10</a></td>
+                    <td>$10</td>
+                    <td>Matte</td>
+                </tr>
+            </table>
+
+            <h2>Skin Tint</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Purchase Link</th>
+                    <th>Price</th>
+                    <th>Makeup Finish</th>
+                </tr>
+                <tr>
+                    <td>E.L.F. Halo Glow Liquid Filter</td>
+                    <td><a href="https://www.elfcosmetics.com/halo-glow-liquid-filter/83567.html">$14</a></td>
+                    <td>$14</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>Rare Beauty Positive Light Tinted Moisturizer SPF 30</td>
+                    <td><a href="https://www.rarebeauty.com/products/positive-light-tinted-moisturizer-broad-spectrum-spf-20-sunscreen?variant=39775687049351">$30</a></td>
+                    <td>$30</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>Saie Slip Tint Tinted Moisturizer</td>
+                    <td><a href="https://saiehello.com/products/slip-tint-tinted-moisturizer">$36</a></td>
+                    <td>$36</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+            </table>
+
+            <h2>Contour/Bronzer</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Purchase Link</th>
+                    <th>Price</th>
+                    <th>Makeup Finish</th>
+                </tr>
+                <tr>
+                    <td>E.L.F. Halo Glow Liquid Contour Wand</td>
+                    <td><a href="https://www.elfcosmetics.com/halo-glow-contour-beauty-wand/84706.html">$9</a></td>
+                    <td>$9</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>LYS No Limit Cream Bronzer Stick</td>
+                    <td><a href="https://lysbeauty.com/products/no-limits-cream-bronzer-stick">$20</a></td>
+                    <td>$20</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>Rare Beauty Warm Wishes Effortless Bronzer Stick</td>
+                    <td><a href="https://www.rarebeauty.com/products/warm-wishes-effortless-bronzer-stick?variant=39620264362119">$26</a></td>
+                    <td>$26</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+            </table>
+
+            <h2>Blush</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Purchase Link</th>
+                    <th>Price</th>
+                    <th>Makeup Finish</th>
+                </tr>
+                <tr>
+                    <td>Rare Beauty Soft Pinch Liquid Blush</td>
+                    <td><a href="https://www.rarebeauty.com/products/soft-pinch-liquid-blush?variant=34493780951175">$23</a></td>
+                    <td>$23</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>Milani Rose Powder Blush</td>
+                    <td><a href="https://www.milanicosmetics.com/products/rose-powder-blush?variant=31236181196894&flow_country=USA&utm_source=google&utm_medium=organic&utm_campaign=shopping&utm_term=31236181196894&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E80ZzcoMjnZaVkW00kajY7E-sNuTILcZjfamJbV_Ol03CyTg8I2eIhoC8CAQAvD_BwE">$10.99</a></td>
+                    <td>$10.99</td>
+                    <td>Matte</td>
+                </tr>
+                <tr>
+                    <td>Saie Dew Blush</td>
+                    <td><a href="https://saiehello.com/products/dew-blush">$25</a></td>
+                    <td>$25</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+            </table>
+
+            <h2>Highlight</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Purchase Link</th>
+                    <th>Price</th>
+                    <th>Makeup Finish</th>
+                </tr>
+                <tr>
+                    <td>Rare Beauty Positive Light Liquid Luminizer</td>
+                    <td><a href="https://www.rarebeauty.com/products/positive-light-liquid-luminizer-1?variant=40242053152903">$25</a></td>
+                    <td>$25</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>Benefit Cookie Powder Highlighter</td>
+                    <td><a href="https://www.benefitcosmetics.com/en-us/product/cookie-powder-highlighter?&sku=FM320&utm_source=google&utm_medium=cpc&adpos=&scid=scplpFM320&sc_intid=FM320&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E6f0Cx4BsaYR3Y3EUfwiO9PdbtNJNCjK8n-kkB3MP-PD9A1ZlQS_QhoCCB4QAvD_BwE&gclsrc=aw.ds">$35</a></td>
+                    <td>$35</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+                <tr>
+                    <td>CoulourPop Super Shock Highlighter</td>
+                    <td><a href="https://www.ulta.com/p/super-shock-highlighter-xlsImpprod17801017?sku=2527703&cmpid=PS_Non!google!Product_Listing_Ads&utm_source=google&utm_medium=paidsearch&cagpspn=pla&CATCI=pla-296577360168&CAAGID=53190094755&CAWELAID=330000200001357535&CATARGETID=330000200002744183&CADevice=c&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E3_lsExfsWKFWdj5QM6PyWGaBl8Ho9R8skzI5kr3iSSH7lBQ_Uo4rxoCMaAQAvD_BwE">$9</a></td>
+                    <td>$9</td>
+                    <td>Dewy/Glowy</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
