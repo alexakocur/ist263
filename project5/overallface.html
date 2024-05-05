@@ -13,7 +13,7 @@
         .wrapper {
             padding: 0 20px; /* Add padding at each end */
         }
-        .container {
+        .data {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -24,13 +24,13 @@
             text-align: center;
             color: #f987b6;
         }
-        .image-container {
+        .allpics {
             display: flex;
             justify-content: center; 
             flex-wrap: wrap; /* Allow images to wrap on smaller screens */
             margin-bottom: 20px; 
         }
-        .image-container img {
+        .allpics img {
             width: 32%; /* Adjusted width to occupy full width of the container */
             height: auto;
             margin-bottom: 10px; /* Added margin between images */
@@ -56,7 +56,7 @@
         a:hover {
             text-decoration: underline;
         }
-        .secondary-navigation select {
+        .second-nav select {
             color: #333; 
             text-decoration: none;
             margin: 0;
@@ -72,12 +72,12 @@
             margin-top: 10px; 
             margin-bottom: 20px; 
         }
-        .secondary-navigation select:hover {
+        .second-nav select:hover {
             color: #f9a5cf; 
             background-color: #f8f8f8;
             border-color: #ffbbdd; 
         }
-        .secondary-navigation {
+        .second-nav {
             text-align: center; 
             margin-top: 20px; 
         }
@@ -87,7 +87,7 @@
     <div class="wrapper"> 
         <h1>Overall Face Makeup Recommendations</h1>
     
-        <div class="secondary-navigation">
+        <div class="second-nav">
             <select onchange="location = this.value;">
                 <option value="#">Select Makeup Category</option>
                 <option value="overallface.html">Overall Face Makeup Recommendations</option>
@@ -97,13 +97,13 @@
             </select>
         </div>
 
-        <div class="image-container">
+        <div class="allpics">
             <img src="makeupbrushespic.jpeg" alt="Makeup brushes coming out of a bag laying on a marble couter top.">
             <img src="brushset.jpeg" alt="Makeup brushes in a makeup brush organizer.">
             <img src="brushesandmakeup.jpeg" alt="Makeup scattered all over a desk.">
         </div>
 
-        <div class="container">
+        <div class="data">
             <h2>Primers</h2>
             <table>
                 <tr>
