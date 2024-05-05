@@ -10,29 +10,29 @@
             padding: 20px 0; /* Adjust padding to add white space at the bottom */
             font-family: 'Times New Roman', Times, serif;
         }
-        .header {
+        header {
             background-color: #F8C8DC;
             text-align: center;
             padding: 70px 0; 
             font-size: 100px;
         }
-        .header h1 {
+        header h1 {
             font-size: 40px;
             margin: auto;
             font-weight: bold; 
             text-align: center;
         }
-        .navigation {
+        nav {
             background-color: #FF69B4;
             text-align: center;
             padding: 15px 0;
         }
-        .navigation a {
+        nav a {
             color: #000000; 
             text-decoration: none;
             margin: 0 20px; 
         }
-        .navigation a:hover {
+        nav a:hover {
             color: #f8f8f8; 
         }
         p {
@@ -62,28 +62,29 @@
         }
         .image-container{
             display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
             justify-content: center;
-            margin-top: 1px; /* Adjust margin-top value */
-            padding: 0 30px;
+            margin-top: 20px; /* Adjust margin-top value */
+            padding: 0 10px; /* Adjust padding to center images */
             margin-bottom: 30px;
         }
         .image-container img {
-            max-width: calc(33.33% - 40px);
+            max-width: calc(33.33% - 20px); /* Adjust image width and margin */
             height: auto;
-            margin: 0 20px;
+            margin: 10px; /* Adjust margin */
         }
         @media only screen and (max-width: 600px) {
-            .header {
+            header {
                 padding: 40px 0; 
                 font-size: 60px;
             }
-            .header h1 {
+            header h1 {
                 font-size: 30px;
             }
-            .navigation {
+            nav {
                 padding: 10px 0;
             }
-            .navigation a {
+            nav a {
                 margin: 0 10px; 
             }
             p {
@@ -104,15 +105,15 @@
                 padding: 0 10px;
             }
             .image-container img {
-                max-width: calc(50% - 20px);
-                margin: 10px;
+                max-width: calc(50% - 20px); /* Adjust image width and margin */
+                margin: 10px; /* Adjust margin */
             }
         }
         @media only screen and (min-width: 601px) {
-            .header h1 {
+            header h1 {
                 font-size: 40px;
             }
-            .header {
+            header {
                 padding: 70px 0;
             }
             h2 {
@@ -123,26 +124,29 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>ALEXA'S BEAUTY GUIDE</h1>
-    </div>
+    </header>
 
-    <div class="navigation">
+    <nav>
         <a href="page1.html">Home Page</a>
         <a href="makeup101.html">Makeup 101</a>
         <a href="stepbystep.html">Step-by-Step</a>
-    </div>
+    </nav>
+    
     <p>STEP BY STEP GUIDE: <br> Everything you need to know about how to use these products.</p>
     <h1>After exploring makeup recommendations, you may be wondering how to apply them correctly. Knowing where to apply each product and understanding the right tools for blending are essential for achieving the desired look. <br> <br> This guide offers detailed examples of application techniques and recommends suitable tools for blending. Whether you are considering purchasing the recommended makeup or already have it, this guide serves as a valuable resource for mastering makeup application techniques.</h1><br>
+    
     <div class="image-container">
         <img src="goodpicone.png" alt="lots of makeup scattered on a table">
         <img src="goodpictwo.jpeg" alt="makeup organized on a vanity">
         <img src="goodpicthree.jpeg" alt="makeup organized on a white vanity">
     </div>
+
     <div class="content-space"></div> <!-- White space below images -->
-    <h2>Here is everything you need to know for a step by step application: <br><br> <strong>How to use Primer:</strong> Start your makeup application with a clean face. Take your primer and apply a dime sized amount all over the face and let dry for 30 seconds. Apply with clean hands. <br><br> <strong>How to use your base of skin tint or foundation:</strong> After you apply your primer, take your foundation or skin tint of choice and dot it all over your face. Keep in mind that you want to make sure that this foundation and skin tint covers your whole face. The less you put on your face the less coverage and vice versa. Apply with a beauty blender which you can find here. (TIP: make sure to wet the beauty blender for better application, squeeze out extra liquid) <br><br> <strong>How to apply concealer:</strong> Take your concealer and apply it underneath your eyes. One dot on each eye will suffice. You can also apply it to the middle of your eyebrows as well as anywhere else that needs extra coverage. Wait 10 seconds and use a concealer brush which you can click here to buy the brush. <br><br> <strong>How to use contour/bronzer:</strong> Take your bronzer, contour or both and apply right above your cheek bone, at the very top of your forehead as well as underneath your chin. Make sure it is well blended. Apply with a beauty blender. <br><br><strong>How to use blush:</strong> You can use blush by applying two small dots on the either side of your cheek preferably right in the middle. Blend it out with your beauty blender. <br><br> <strong>How to use highlight:</strong> You can apply highlight at the bridge of your nose as well as the top of your cheekbones right where the corner of your eye starts. Tap in the highlighter with clean hands until fully blended. <br><br> <strong>How to use mascara/eyelash curler:</strong> You can first start by using your eyelash curler. Insert your eyelash into the clamp of the curler and hold for 5 seconds on each eye. Make sure you don't press too hard. When applying mascara, go slow, you want to make sure the eyelashes are getting fully covered and elongated and getting the best results</h2>
+
+    <section>
+        <h2>Here is everything you need to know for a step by step application: <br><br> <strong>How to use Primer:</strong> Start your makeup application with a clean face. Take your primer and apply a dime sized amount all over the face and let dry for 30 seconds. Apply with clean hands. <br><br> <strong>How to use your base of skin tint or foundation:</strong> After you apply your primer, take your foundation or skin tint of choice and dot it all over your face. Keep in mind that you want to make sure that this foundation and skin tint covers your whole face. The less you put on your face the less coverage and vice versa. Apply with a beauty blender which you can find here. (TIP: make sure to wet the beauty blender for better application, squeeze out extra liquid) <br><br> <strong>How to apply concealer:</strong> Take your concealer and apply it underneath your eyes. One dot on each eye will suffice. You can also apply it to the middle of your eyebrows as well as anywhere else that needs extra coverage. Wait 10 seconds and use a concealer brush which you can click here to buy the brush. <br><br> <strong>How to use contour/bronzer:</strong> Take your bronzer, contour or both and apply right above your cheek bone, at the very top of your forehead as well as underneath your chin. Make sure it is well blended. Apply with a beauty blender. <br><br><strong>How to use blush:</strong> You can use blush by applying two small dots on the either side of your cheek preferably right in the middle. Blend it out with your beauty blender. <br><br> <strong>How to use highlight:</strong> You can apply highlight at the bridge of your nose as well as the top of your cheekbones right where the corner of your eye starts. Tap in the highlighter with clean hands until fully blended. <br><br> <strong>How to use mascara/eyelash curler:</strong> You can first start by using your eyelash curler. Insert your eyelash into the clamp of the curler and hold for 5 seconds on each eye. Make sure you don't press too hard. When applying mascara, go slow, you want to make sure the eyelashes are getting fully covered and elongated and getting the best results</h2>
+    </section>
 </body>
 </html>
-
-
-
