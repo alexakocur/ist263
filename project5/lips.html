@@ -13,7 +13,7 @@
         .wrapper {
             padding: 0 20px; /* Add padding at each end */
         }
-        .container {
+        .data {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -24,12 +24,12 @@
             text-align: center;
             color: #f987b6;
         }
-        .image-container {
+        .allpics {
             display: flex;
             justify-content: space-between; /* Spread images apart */
             margin-bottom: 20px; /* Added margin bottom */
         }
-        .image-container img {
+        .allpics img {
             width: 30%; /* Adjusted width to occupy full width of the container */
             height: 350px;
             margin-bottom: 10px;
@@ -55,7 +55,7 @@
         a:hover {
             text-decoration: underline;
         }
-        .secondary-navigation select {
+        .second-nav select {
             color: #333; 
             text-decoration: none;
             margin: 0;
@@ -71,23 +71,22 @@
             margin-top: 10px; 
             margin-bottom: 20px; 
         }
-        .secondary-navigation select:hover {
+        .second-nav select:hover {
             color: #f9a5cf; 
             background-color: #f8f8f8;
             border-color: #ffbbdd; 
         }
-        .secondary-navigation {
+        .second-nav {
             text-align: center; 
             margin-top: 20px; 
         }
     </style>
 </head>
 <body>
-    <div class="wrapper"> <!-- Added wrapper div -->
+    <div class="wrapper"> 
         <h1>Lip Recommendations</h1>
         
-        <!-- Navigation moved here -->
-        <div class="secondary-navigation">
+        <div class="second-nav">
             <select onchange="location = this.value;">
                 <option value="#">Select Makeup Category</option>
                 <option value="overallface.html">Overall Face Makeup Recommendations</option>
@@ -97,13 +96,13 @@
             </select>
         </div>
 
-        <div class="image-container">
+        <div class="allpics">
             <img src="goodlips1.jpeg" alt="Lipstick on a countertop laying next to a flower and cup of coffee.">
             <img src="goodlips2.jpeg" alt="YSL Lipstick placed on a coutertop.">
             <img src="goodlips3.jpeg" alt="Lipstick on a counter top along with a lip liner and a makeup brush.">
         </div>
 
-        <div class="container">
+        <div class="data">
             <h2>Lip Glosses/Lip Sticks</h2>
             <table>
                 <tr>
