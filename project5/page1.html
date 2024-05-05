@@ -64,13 +64,14 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
-            margin-bottom: 50px; /* Increased margin bottom for more white space */
+            margin-bottom: 30px; /* Adjusted margin bottom for more white space */
             padding: 0 20px;
+            flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
         }
         .image-container img {
-            max-width: calc(33.33% - 40px);
+            max-width: calc(33.33% - 20px); /* Adjusted image width */
             height: auto;
-            margin: 0 20px;
+            margin: 10px; /* Adjusted margin */
         }
         @media only screen and (max-width: 600px) {
             .header {
@@ -104,8 +105,8 @@
                 padding: 0 10px;
             }
             .image-container img {
-                max-width: calc(50% - 20px);
-                margin: 10px;
+                max-width: calc(50% - 20px); /* Adjusted image width */
+                margin: 10px; /* Adjusted margin */
             }
         }
         @media only screen and (min-width: 601px) {
@@ -142,4 +143,3 @@
     <h2>Here are some bullet points that I have complied to help your makeup journey be less stressful: <br><br> <strong>A positive attitude:</strong> <br> Makeup is hard, it is far from easy – you need patience and a positive attitude. When I started this new hobby and started buying these products, it took a lot of trial and error to figure out what worked for me. Be open to new products and dont be scared to ask for help from friends. <br><br> <strong>Figure out what your style is:</strong> <br> Makeup is art, it is the way you express yourself. Figure out what type of makeup you like. There are tons of different styles of makeup out there. Look online at reference photos and try to visualize that makeup look on yourself. Ask yourself these questions: Do you like natural makeup, what type of finish do you want on your face? Glowy finish or more of a matte finish?<br><br><strong>Price Range:</strong><br> You want to keep in mind that makeup is expensive. Ask yourself if you are willing to buy more high end makeup or drugstore makeup. If you are just starting, I recommend using drugstore makeup because honestly it is just as good.</h2>
 </body>
 </html>
-
