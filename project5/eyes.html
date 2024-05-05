@@ -11,9 +11,9 @@
             font-family: Arial, sans-serif;
         }
         .wrapper {
-            padding: 0 20px; /* Add padding at each end */
+            padding: 0 20px; 
         }
-        .container {
+        .data {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -24,13 +24,13 @@
             text-align: center;
             color: #f987b6;
         }
-        .image-container {
+        .allpics {
             display: flex;
-            justify-content: space-between; /* Spread images apart */
-            margin-bottom: 20px; /* Added margin bottom */
+            justify-content: space-between; 
+            margin-bottom: 20px; 
         }
-        .image-container img {
-            width: 30%; /* Adjusted width */
+        .allpics img {
+            width: 30%; 
             height: auto;
         }
         table {
@@ -54,7 +54,7 @@
         a:hover {
             text-decoration: underline;
         }
-        .secondary-navigation select {
+        .second-nav select {
             color: #333; 
             text-decoration: none;
             margin: 0;
@@ -70,23 +70,22 @@
             margin-top: 10px; 
             margin-bottom: 20px; 
         }
-        .secondary-navigation select:hover {
+        .second-nav select:hover {
             color: #f9a5cf; 
             background-color: #f8f8f8;
             border-color: #ffbbdd; 
         }
-        .secondary-navigation {
+        .second-nav {
             text-align: center; 
             margin-top: 20px; 
         }
     </style>
 </head>
 <body>
-    <div class="wrapper"> <!-- Added wrapper div -->
+    <div class="wrapper"> 
         <h1>Lip Recommendations</h1>
         
-        <!-- Navigation moved here -->
-        <div class="secondary-navigation">
+        <div class="second-nav">
             <select onchange="location = this.value;">
                 <option value="#">Select Makeup Category</option>
                 <option value="overallface.html">Overall Face Makeup Recommendations</option>
@@ -96,13 +95,13 @@
             </select>
         </div>
 
-        <div class="image-container">
+        <div class="allpics">
             <img src="eyesmakeup.jpeg" alt="Person with eyes open and close up showing their pink mascara ">
             <img src="loreal.jpeg" alt="Loreal Makeup mag with loreal products around it">
             <img src="eyesmakeup.webp" alt="Eyeshadow and mascara on a countertop">
         </div>
 
-        <div class="container">
+        <div class="data">
             <h2>Mascaras</h2>
             <table>
                 <tr>
