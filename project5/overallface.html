@@ -26,12 +26,14 @@
         }
         .image-container {
             display: flex;
-            justify-content: space-between; 
+            justify-content: center; 
+            flex-wrap: wrap; /* Allow images to wrap on smaller screens */
             margin-bottom: 20px; 
         }
         .image-container img {
-            width: 30%; /* Adjusted width */
+            width: 32%; /* Adjusted width to occupy full width of the container */
             height: auto;
+            margin-bottom: 10px; /* Added margin between images */
         }
         table {
             width: 100%;
@@ -245,11 +247,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
