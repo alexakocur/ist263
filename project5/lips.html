@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lip Makeup Recommendations</title>
+    <title>Lip Recommendations</title>
     <style>
         body {
             margin: 0;
@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
         }
         .padding {
-            padding: 0 20px;
+            padding: 0 20px; 
         }
         .data {
             max-width: 800px;
@@ -26,15 +26,12 @@
         }
         .allpics {
             display: flex;
-            justify-content: space-between; /* Spread images apart */
-            margin-bottom: 20px; /* Added margin bottom */
+            justify-content: space-between; 
+            margin-bottom: 20px; 
         }
         .allpics img {
-            width: calc(33% - 20px); /* Adjusted width to occupy full width of the container */
-            height: 400px; /* Increased height */
-            margin-bottom: 10px;
-            margin-right: 10px; /* Added margin to the right */
-            margin-left: 10px; /* Added margin to the left */
+            width: 30%; 
+            height: auto;
         }
         table {
             width: 100%;
@@ -50,11 +47,11 @@
         th {
             background-color: #f2f2f2;
         }
-        a {
+        link {
             text-decoration: none;
             color: #065fd4;
         }
-        a:hover {
+        link:hover {
             text-decoration: underline;
         }
         .second-nav select {
@@ -84,9 +81,8 @@
         }
     </style>
 </head>
-<body>
-    <div class="wrapper padding"> 
-        <h1>Lip Recommendations</h1>
+<body> 
+        <h1>Eye Recommendations</h1>
         
         <div class="second-nav">
             <select onchange="location = this.value;">
@@ -99,22 +95,22 @@
         </div>
 
         <div class="allpics">
-            <img src="goodlips1.jpeg" alt="Lipstick on a countertop laying next to a flower and cup of coffee.">
-            <img src="goodlips2.jpeg" alt="YSL Lipstick placed on a coutertop.">
-            <img src="goodlips3.jpeg" alt="Lipstick on a counter top along with a lip liner and a makeup brush.">
+            <img src="goodlips1.jpeg" alt="Person with eyes open and close up showing their pink mascara ">
+            <img src="goodlips2.jpeg" alt="Loreal Makeup mag with loreal products around it">
+            <img src="goodlips3.jpeg" alt="Eyeshadow and mascara on a countertop">
         </div>
 
         <div class="data">
-            <h2>Lip Glosses/Lip Sticks</h2>
+            <h2>Mascaras</h2>
             <table>
                 <tr>
-                    <th>Product</th>
-                    <th>Purchase Link</th>
+                    <th>Product Name</th>
+                    <th>Purchase Here</th>
                     <th>Price</th>
                     <th>Makeup Finish</th>
                 </tr>
                 <tr>
-                    <td>Charlotte Tilbury Pillow Talk Matte Lipstick </td>
+                    <td>Charlotte Tilbury Pillow Talk Matte Lipstick</td>
                     <td><a href="https://www.charlottetilbury.com/us/product/matte-revolution-lipstick-pillowtalk?istCompanyId=df2906b5-23af-4f14-b5ed-2585966c6cfa&istFeedId=7939e1ee-2e27-4b0f-88f4-212583445937&istItemId=xllaprpwx&istBid=t&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E_Ab5erqIsJuuSXN_x8OLPFIJltNcBk-l9WvEbPl4l7f9NY4pDdLYRoC9v0QAvD_BwE&gclsrc=aw.ds">$35</a></td>
                     <td>$35</td>
                     <td>Matte</td>
@@ -129,10 +125,9 @@
                     <td>Tarte Maracuja Juicy Lip Balm</td>
                     <td><a href="https://tartecosmetics.com/shop/maracuja-juicy-lip-balm-2035.html?dwvar_2035_color=rose%20(soft%20pink%20beige)&noredirect=true&bx=new&mrkgadid=&mrkgcl=1213&mrkgen=&mrkgbflag=&mrkgcat=&acctid=21700000001506533&dskeywordid=&lid=58700007988881927&dsproductgroupid=&product_id=846733046010&merchid=138925179&prodctry=US&prodlang=en&channel=online&storeid=%7Bproduct_store_id%7D&device=c&network=x&matchtype=&locationid=9005169&creative=&targetid=&campaignid=18142690928&adgroupid=&awsearchcpc=&gad_source=1&gclid=CjwKCAiA8YyuBhBSEiwA5R3-E0ORhftwcY5-sY5cE_czQXw0RIN1Oh03Dv1-NnNTGBnTifq41teZeRoCLcYQAvD_BwE&gclsrc=aw.ds">$24</a></td>
                     <td>$24</td>
-                    <td>Dewy/Glossy</td>
+                    <td>Glowy</td>
                 </tr>
             </table>
         </div>
-    </div>
 </body>
 </html>
