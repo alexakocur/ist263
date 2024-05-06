@@ -25,15 +25,12 @@
             color: #f987b6;
         }
         .allpics {
-            display: flex;
-            justify-content: center; 
-            flex-wrap: wrap; /* Allow images to wrap on smaller screens */
             margin-bottom: 20px; 
+            text-align: center;
         }
         .allpics img {
-            width: 70%; /* Adjusted width to occupy full width of the container */
-            height: 150px; /* Ensures images maintain aspect ratio */
-            margin-bottom: 5px; /* Added margin between images */
+            width: 30%; /* Adjusted width to occupy full width of the container */
+            display: inline-block /* Ensures images maintain aspect ratio */
         }
         table {
             width: 100%;
@@ -80,6 +77,14 @@
         .second-nav {
             text-align: center; 
             margin-top: 20px; 
+        }
+        @media only screen and (max-width: 600px) {
+            .allpics {
+                overflow-x: hidden; /* Hide horizontal scroll on smaller screens */
+            }
+            .allpics img {
+                margin: 0 5px; /* Reduce space between images on smaller screens */
+            }
         }
     </style>
 </head>
