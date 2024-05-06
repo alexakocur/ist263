@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overall Face Makeup Recommendations</title>
+    <title> Overall Face Makeup Recommendations</title>
     <style>
         body {
             margin: 0;
@@ -25,17 +25,18 @@
             color: #f987b6;
         }
         .allpics {
+            display: flex;
+            justify-content: space-between; 
             margin-bottom: 20px; 
-            text-align: center;
         }
         .allpics img {
-            width: 30%; /* Adjusted width to occupy full width of the container */
-            display: inline-block /* Ensures images maintain aspect ratio */
+            width: 30%; 
+            height: auto;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 5px;
+            margin-top: 20px;
         }
         th, td {
             padding: 8px;
@@ -46,11 +47,11 @@
         th {
             background-color: #f2f2f2;
         }
-        a {
+        link {
             text-decoration: none;
             color: #065fd4;
         }
-        a:hover {
+        link:hover {
             text-decoration: underline;
         }
         .second-nav select {
@@ -78,18 +79,11 @@
             text-align: center; 
             margin-top: 20px; 
         }
-        @media only screen and (max-width: 600px) {
-            .allpics {
-                overflow-x: hidden; /* Hide horizontal scroll on smaller screens */
-            }
-            .allpics img {
-                margin: 0 5px; /* Reduce space between images on smaller screens */
-            }
-        }
     </style>
 </head>
-<body>
+<body> 
         <h1>Overall Face Makeup Recommendations</h1>
+        
         <div class="second-nav">
             <select onchange="location = this.value;">
                 <option value="#">Select Makeup Category</option>
@@ -249,4 +243,3 @@
         </div>
 </body>
 </html>
-
