@@ -31,8 +31,8 @@
             margin-bottom: 20px; 
         }
         .allpics img {
-            width: 30%; /* Adjusted width to occupy full width of the container */
-            height: 400px;
+            width: 70%; /* Adjusted width to occupy full width of the container */
+            height: 150px; /* Ensures images maintain aspect ratio */
             margin-bottom: 5px; /* Added margin between images */
         }
         table {
@@ -80,6 +80,17 @@
         .second-nav {
             text-align: center; 
             margin-top: 20px; 
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 600px) {
+            .allpics img {
+                width: 100%; /* Adjusted width to occupy full width of the container */
+                height: auto; /* Ensures images maintain aspect ratio */
+            }
+            .data {
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
         }
     </style>
 </head>
@@ -244,3 +255,4 @@
         </div>
 </body>
 </html>
+
