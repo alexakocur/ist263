@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye Makeup Recommendations</title>
+    <title>Lip Makeup Recommendations</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        .wrapper {
-            padding: 0 20px; /* Add padding at each end */
+        .padding {
+            padding: 0 20px;
         }
         .data {
             max-width: 800px;
@@ -30,9 +30,11 @@
             margin-bottom: 20px; /* Added margin bottom */
         }
         .allpics img {
-            width: 30%; /* Adjusted width to occupy full width of the container */
-            height: 350px;
+            width: calc(33% - 20px); /* Adjusted width to occupy full width of the container */
+            height: 400px; /* Increased height */
             margin-bottom: 10px;
+            margin-right: 10px; /* Added margin to the right */
+            margin-left: 10px; /* Added margin to the left */
         }
         table {
             width: 100%;
@@ -83,7 +85,7 @@
     </style>
 </head>
 <body>
-    <div class="wrapper"> 
+    <div class="wrapper padding"> 
         <h1>Lip Recommendations</h1>
         
         <div class="second-nav">
